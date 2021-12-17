@@ -1,0 +1,44 @@
+{
+    "configurations": [
+        {
+            "name": "nRF52832",
+            "includePath": [
+                "${workspaceFolder}/**",
+                //"${env:GNU_GCC}/arm-none-eabi/include",
+                "${env:nRF_SDK}/components/libraries/util",
+                "${env:nRF_SDK}/modules/nrfx/mdk",
+                "${env:nRF_SDK}/components/softdevice/s132/headers",
+                "${env:nRF_SDK}/components/ble/common",
+                "${env:nRF_SDK}/components/softdevice/common",
+                "${env:nRF_SDK}/components/libraries/log",
+                "${env:nRF_SDK}/components/ble/ble_services/ble_libs",
+                "${env:nRF_SDK}/components/ble/nrf_ble_gatt",
+                "${env:nRF_SDK}/components/boards",
+                "${env:nRF_SDK}/components/libraries/button",
+                "${env:nRF_SDK}/components/**",
+                "${env:nRF_SDK}/**"
+            ],
+            "defines": [
+                "BOARD_PCA10040",
+                "CONFIG_GPIO_AS_PINRESET",
+                "INITIALIZE_USER_SECTIONS",
+                "FLOAT_ABI_HARD",
+                "NRF52",
+                "NRF52832_XXAA",
+                "NRF_SD_BLE_API_VERSION=6",
+                "S132",
+                "SOFTDEVICE_PRESENT",
+                "SWI_DISABLE0"
+            ],
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ],
+            "compilerPath": "${env:GNU_GCC}/bin/arm-none-eabi-gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}
